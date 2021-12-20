@@ -4,7 +4,7 @@ This repository focuses on three scenarios that use multiple agents cooperativel
 
 ## Scenario 1
 
-![Scenario 1 demo](../demos/s1.mp4)
+![Scenario 1 demo](demos/s1.mp4)
 
 Scenario 1 is the simplest of the scenarios, requiring the collection of one resource using one agent. It follows the `basic_agent.asl` to scan and mine a single gold node in a 10x10 environment. Being a solo agent, it uses a combination of scanning and mining with a scan radius of 3 and a capacity of 3. The agent moves around the environment in a pattern, scanning for the resource. Once found, it uses the A* algorithm to find the shortest path and mines the ore until maximum capacity. Next, it uses the A* algorithm again to return home and deposit the ore. The agent moves back and forth between the resource and the base until depleted.
 
