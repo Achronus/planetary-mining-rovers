@@ -1,0 +1,128 @@
+{
+  "agents": {
+    "can_scan_agent": false,
+    "can_scan_base": false,
+    "can_scan_diamond": true,
+    "can_scan_gold": true,
+    "can_scan_obstacle": true,
+    "energy": "1800",
+    "max_agent_count": 4
+  },
+  "artefacts": {
+    "17_10": {
+      "base": 1,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 1
+    },
+    "4_16": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 3,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "13_30": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 3,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "29_15": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 3,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "7_1": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0
+    },
+    "24_26": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 3,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "8_5": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 3,
+      "gold": 3,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "2_31": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 0,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0
+    },
+    "3_31": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 3,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "19_8": {
+      "base": 0,
+      "clear": 0,
+      "diamond": 3,
+      "gold": 0,
+      "obstacle": 0,
+      "view": 0,
+      "has_artefact": 0
+    },
+    "dynamic": {
+      "enforce": false,
+      "rs_count": 0,
+      "rs_density": 0,
+      "rs_type": [
+        "Gold"
+      ],
+      "ob_density": "none"
+    }
+  },
+  "world": {
+    "configurable_points": 6,
+    "fullscreen": false,
+    "maze": false,
+    "size": 35,
+    "wrap": true
+  },
+  "costing": {
+    "collect": 10,
+    "collect_adjustment": 1,
+    "deposit": 10,
+    "deposit_adjustment": 1,
+    "idle": 5,
+    "move": 6,
+    "move_adjustment": 1,
+    "scan": 7.5,
+    "scan_adjustment": 1
+  }
+}

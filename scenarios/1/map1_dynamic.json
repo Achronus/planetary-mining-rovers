@@ -1,0 +1,38 @@
+{
+  "agents": {
+    "can_scan_agent": false,
+    "can_scan_base": false,
+    "can_scan_diamond": true,
+    "can_scan_gold": true,
+    "can_scan_obstacle": true,
+    "energy": "5000",
+    "max_agent_count": 1
+  },
+  "artefacts": {
+    "dynamic":  {
+      "enforce": true,
+      "rs_count": 15,
+      "rs_density": 1,
+      "rs_type": ["Gold"],
+      "ob_density": "none"
+    }
+  },
+  "costing": {
+    "collect": 10,
+    "collect_adjustment": 1,
+    "deposit": 10,
+    "deposit_adjustment": 1,
+    "idle": 5,
+    "move": 6,
+    "move_adjustment": 1,
+    "scan": 7.5,
+    "scan_adjustment": 1
+  },
+  "world": {
+    "configurable_points": 6,
+    "fullscreen": false,
+    "maze": false,
+    "size": 10,
+    "wrap": true
+  }
+}

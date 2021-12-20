@@ -1,0 +1,49 @@
+MAS planetary_rover_miners {
+
+	infrastructure: 
+		Centralised
+
+	environment:
+		/* 
+			NOTE ON CONFIGURING THE ENVIRONMENT
+		
+			required parameters:
+				- mas2j_file - the name of this file
+				- scenario_file - the json file to load for the environment
+				- discovery_type - important for scenarios where agents are allowed to see each other
+				
+		*/
+		rover.RoverWorld(
+			"mas2j_file=scenario1.mas2j", 
+			"scenario_file=scenarios/1/map1_dynamic.json",
+			"discovery_type=none")
+	
+	agents:
+		/*
+			NOTE ON DEFINING AGENTS
+			
+			parameters:
+				capacity  (REQUIRED)
+				scan_range (REQUIRED)
+				resource_type (OPTIONAL: "Gold", or "Diamond")
+				group (REQUIRED)
+		
+			
+				capacity: max no. of resources your agent can carry. This can not be changed at run time.
+				
+				scan_range: max radius at which an agent can scan its grid. This can not be changed at run time.
+				
+				resource_type: resource an agent can collect. Can not be changed once set
+				
+				group: The group an agent belongs to. Can be set to any value from 0 to 6. 
+				That is 0,1,2,3,4,5 and 6. This can be used to assign a different colour to agents to aid debugging 
+				and also to differentiate them in advanced and/or competitive scenarios.	
+				
+		*/
+	
+		gold basic_miner [ capacity=3, scan_range=3, resource_type="Gold", group=1, mindinspector="gui(cycle,html,history)"];
+		
+		
+	aslSourcePath:
+		"src/asl";
+}
